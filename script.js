@@ -78,7 +78,7 @@ d3.csv("visualizeRRAA.csv", function(data) { // updated dataset
   			return dotXScale(data.index);
   		})
   		.attr("cy", function(data) {
-  			return dotYScale(data.rThinkAndRight);
+  			return dotYScale(data.rrightAndAll);
   		})
   });
 
@@ -89,7 +89,7 @@ d3.csv("visualizeRRAA.csv", function(data) { // updated dataset
   			return dotXScale(data.index);
   		})
   		.attr("cy", function(data) {
-  			return dotYScale(data.rrightAndAll);
+  			return dotYScale(data.rThinkAndRight);
   		})
   });
 
