@@ -11,11 +11,11 @@ d3.csv("visualizeRRAA.csv", function(data) { // updated dataset
       .domain([0,311])
       .range([0, width]);
   const yScale = d3.scaleLinear()
-      .range([-1,2])
+      .domain([-1,2])
       .range([height, 0]);
 
   const dotYScale = d3.scaleLinear()
-      .range([-1,2])
+      .domain([-1,2])
       .range([height - _HackPadding.y, 0]);
   const dotXScale = d3.scaleLinear()
       .domain([0,311])
