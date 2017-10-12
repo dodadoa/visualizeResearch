@@ -20,11 +20,17 @@
 
 <body>
   <div class="container py-md-3">
-    <button id="rRAA" class="btn btn-outline-primary btn-cursor" type="button" >ratio: ตอบถูกกี่ข้อเทียบกับทั้งหมด</button>
-    <button id="rTAT" class="btn btn-outline-primary btn-cursor" type="button" >ratio: ตอบถูกกี่ข้อเทียบกับที่ตอบใช่หรือไม่ใช่</button>
+    <button id="rRAA" class="btn btn-outline-primary btn-cursor btn-margin" type="button" >ratio: ตอบถูกกี่ข้อเทียบกับทั้งหมด</button>
+    <button id="rTAT" class="btn btn-outline-primary btn-cursor btn-margin" type="button" >ratio: ตอบถูกกี่ข้อเทียบกับที่ตอบใช่หรือไม่ใช่</button>
+    <button id="uR" class="btn btn-outline-primary btn-cursor btn-margin" type="button" >ratio: ตอบไม่ทราบกี่ข้อเมื่อเทียบกับที่ไปทั้งหมด</button>
   </div>
   <div class="container py-md-3">
-    <div id="main"> </div>
+    <div class="row">
+      <div class="col-sm-1" id="conX"> </div>
+      <div class="col-sm-9" id="main"> </div>
+    </div>
+    <div id="conY"> </div>
+  </div>
   </div>
   <script src="./script.js" type="text/javascript"></script>
 </body>

@@ -5,3 +5,7 @@ body {
 .btn-cursor {
   cursor: pointer;
 }
+
+.btn-margin {
+  margin: 5px;
+}

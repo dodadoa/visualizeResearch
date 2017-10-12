@@ -60,6 +60,25 @@ d3.csv("visualizeRRAA.csv", function(data) { // updated dataset
           .style("fill", "#3240ff");
       });
 
+
+  const conX = d3.select("#conX")
+			.append("svg")
+      .attr("width", 60)
+      .attr("height",600);
+  conX.append("text")
+      .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
+      .text("Ratio")
+      .attr("transform","translate(20,300)");
+
+  const conY = d3.select("#conY")
+			.append("svg")
+      .attr("width", 600)
+      .attr("height",60);
+  conY.append("text")
+      .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
+      .text("Index")
+      .attr("transform","translate(390,20)");
+
   // text axis
   svg.append("g")
       .attr("class", "x axis")
@@ -90,6 +109,17 @@ d3.csv("visualizeRRAA.csv", function(data) { // updated dataset
   		})
   		.attr("cy", function(data) {
   			return dotYScale(data.rThinkAndRight);
+  		})
+  });
+
+  d3.select("#uR").on("click", function() {
+  	scatter
+  		.transition()
+  		.attr("cx", function(data) {
+  			return dotXScale(data.index);
+  		})
+  		.attr("cy", function(data) {
+  			return dotYScale(data.uR);
   		})
   });
 
