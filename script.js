@@ -34,7 +34,7 @@ d3.csv("visualizeRRAA.csv", function(data) { // updated dataset
           "border: thin solid rgb(13, 0, 65); border-radius: 2px;"
         );
 
-	const circle = svg.selectAll("circle")
+	const scatter = svg.selectAll("circle")
 	   .data(data)
 	   .enter()
 	   .append("circle")
@@ -72,7 +72,7 @@ d3.csv("visualizeRRAA.csv", function(data) { // updated dataset
       .call(yAxis)
 
   d3.select("#rRAA").on("click", function() {
-  	circle
+  	scatter
   		.transition()
   		.attr("cx", function(data) {
   			return dotXScale(data.index);
@@ -83,7 +83,7 @@ d3.csv("visualizeRRAA.csv", function(data) { // updated dataset
   });
 
   d3.select("#rTAT").on("click", function() {
-  	circle
+  	scatter
   		.transition()
   		.attr("cx", function(data) {
   			return dotXScale(data.index);
