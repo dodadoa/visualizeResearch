@@ -1,5 +1,5 @@
 # visualizeResearch
 for my medical research
 
-###note:
+## note:
 should open in firefox
