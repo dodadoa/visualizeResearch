@@ -8,7 +8,7 @@ d3.csv("visualizeRRAA.csv", function(data) { // updated dataset
 	const height = 600 - margin.top - margin.bottom;
 
   const xScale = d3.scaleLinear()
-      .domain([0,301])
+      .domain([0,311])
       .range([0, width]);
   const yScale = d3.scaleLinear()
       .range([-1,2])
@@ -18,7 +18,7 @@ d3.csv("visualizeRRAA.csv", function(data) { // updated dataset
       .range([-1,2])
       .range([height - _HackPadding.y, 0]);
   const dotXScale = d3.scaleLinear()
-      .domain([0,301])
+      .domain([0,311])
       .range([0, width - _HackPadding.x ]);
 
   const xAxis = d3.axisBottom(xScale);
